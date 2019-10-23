@@ -1,0 +1,519 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css ---------*/
+body{
+    color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+header{
+    max-width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    
+
+}
+nav{  
+    font-size: 10px;
+    width: 100%;
+    margin: 0px auto;
+}
+ul{
+   display: flex;
+   justify-content: space-evenly;
+}
+nav div{
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    background: #a1a1a150;
+    margin: 10px 0;
+}
+nav  li{
+    color: #e2574c;
+    padding: 5px 3vw;
+    list-style: none;
+    border-radius:5px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: raleMedium ;
+    transition: background .6s ease;
+}
+
+
+nav  li:hover{
+    background: rgba(255, 59, 59, 0.034);
+    cursor: pointer;
+    color: #b64036 ;
+}
+.logo{
+    height: 40px; 
+
+}
+
+.cart{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    transition:border .6s ease-in-out;   
+}
+.cart:hover{
+    border: 1px rgba(255, 0, 0, 0.26) inset;
+}
+.cartlogo{
+    top: 15px;
+    right: 15px;
+}
+.cartlogo span{
+    padding: 5px 8px;
+    font-size: 10px;
+    position: relative;
+    background: #e2574c;
+    color: white;
+    border-radius: 50%;
+    right: 18px;
+    top: -33px;
+}
+
+.title{
+    position: relative;
+    background-image:linear-gradient(90deg ,rgba(88, 88, 88, 0.3) , rgba(73, 73, 73, 0.3)),  url(../images/flower-bkgd.jpg);
+    background-attachment: fixed;
+    height: 90vh;
+    text-align: center;
+    color: aliceblue;
+    z-index: -2;
+    align-items: center;
+    
+  
+}
+.title img{
+    filter: brightness(.7);
+    position: absolute;
+    bottom: -30px;
+    height: 75vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    ;
+}
+.title h1{
+    font-family: raleLight;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    position: absolute;
+    bottom: 55%; 
+    left: 50%;
+    text-shadow:3px 3px 5px #2d2d2d;
+    transform: translateX(-50%);
+}
+.title h2{
+    font-family: play;
+    font-weight: 400;
+    font-size:40px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    text-shadow:3px 3px 5px #2d2d2d;
+    transform: translateX(-50%);
+}
+.intro{
+    text-align: center;
+    padding: 50px 20%;
+    background: white;
+
+}
+.intro h2{
+    font-size: 30px ;
+    font-family: playItalic;
+    font-weight: 200;
+    margin-bottom: 30px;
+
+}
+.intro strong{
+    font-family: playBold;
+}
+.intro p{
+    font-family: raleLight;
+    font-size: 15px;
+}
+.categories{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.categories img{
+    height: 47.5vw;
+    filter: brightness(.8);
+    transition: filter .6s ease; 
+}
+.categories img:hover{
+    filter: brightness(.5)
+}
+.categories div{
+    padding: .5vw 0;
+    position: relative;
+}
+.categories span{
+    font-size: 6vw;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: ralemedium ,sans-serif;
+    position: absolute;
+    top: 48%;
+    text-shadow:3px 3px 5px #2d2d2d;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.big img{
+    width:99vw ;
+}
+.mostloved{
+    padding: 50px;
+    text-align: center;
+    font-family: playItalic;
+    font-size: 30px;
+}
+.mostloved span{
+    font-weight: bolder;
+    font-family: play;
+}
+.main-carousel{
+    margin-bottom: 70px;
+
+}
+.carousel-cell h2{
+    color:#e2574c;
+    font-family: play;
+    font-size: 20px;
+}
+.carousel-cell p{
+    padding: 10px;
+    font-family:ralemedium,sans-serif;
+    text-transform: uppercase;
+    color: #969696;
+}
+.carousel-cell span{
+    padding: 10px;
+    font-family: rale,sans-serif;
+    text-transform: uppercase;
+    color: #969696;
+    font-size: 10px;
+
+}
+.carousel-cell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.signing{
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url(../images/wave-bkgd.jpg);
+    background-position: bottom;
+    text-shadow:3px 3px 8px #2d2d2d;
+    line-height: 20px;
+}
+.signing h2{
+    font-family: playItalic;
+    font-size:25px;
+    margin-top: 20px;
+}
+.signing strong{
+    font-family: playBold;
+}
+.signing p{
+    font-size: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 50px;
+    font-family: ralelight;
+}
+.subs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 30px;
+    width: 250px;  
+    font-size: 30px;
+    padding: 0px;
+    border-radius: 25px;
+    padding: 0px;
+    background-color: white;
+}
+
+.subs input{ 
+    font-size: 10px;
+    margin: 10px;
+    font-family: ralemedium;
+    border-radius: 25px;
+    padding-left:10px;
+    width: 132px;
+    border: none;
+    height: 30px;
+}
+.subs button{
+    font-size: 10px;
+    font-family: ralemedium;
+    height: 25px;
+    border: none;
+    background: #e2574c;
+    color: white;
+    width: 80px;
+    border-radius: 25px;
+}
+
+footer{
+    background: #242424;
+    color: white ;
+    padding: 50px 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+footer .container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+footer a{
+    text-decoration:underline;
+}
+footer div{
+    font-family: play;
+}
+.socialMedia{
+    display: flex;
+    flex-direction:row ;
+    font-family: raleLight;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 10px auto;
+}
+.low{
+    color: #969696;
+}
+.socialMedia span{
+
+    display: block;
+    padding: 2px 0;
+}
+span p{
+    display: none;
+}
+.socialMedia i{
+    height: 20px;  
+}
+ /* table screen ------------------------------------------------------*/
+@media (min-width:600px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav{
+        width: auto;
+        margin: 0;
+        font-size: 15px;
+        padding: 20px 0;
+    }
+    header{
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .logo{
+        order: 0;
+    }
+    nav div{
+        display: none;
+    }
+    .cartlogo{
+        order: 2;
+    }
+    .title h1{
+        font-weight: 600;
+    }
+    .title h2{
+        font-size: 50px;
+    }
+    .categories div{
+        padding:0;
+    }
+    .categories .item{
+        box-sizing: border-box;
+        flex: 1 0 25%;
+        max-width: 25%;
+        border: 5px solid white;
+        border-top:5px ;
+    }
+    .categories img{
+        height: 25vw;
+        width: 25vw;
+    } 
+    .categories span{
+        font-size: 30px;
+    }
+    .categories .big {
+        flex: 2 0 50%;
+        max-width: 50%; 
+       
+    }
+    .categories .big img{
+        width: 105%;
+    }
+    .big{
+        width: auto;
+    }
+    .carousel-cell{
+        width: 50%;
+    }
+    .signing h2{
+        font-family: playItalic;
+        font-size:30px;
+        margin-top: 20px;
+    }
+    .signing strong{
+        font-family: playBold;
+    }
+    .signing p{
+        font-size: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 50px;
+        font-family: ralelight;
+    }
+    .subs{
+        height: 55px;
+        width: 350px;  
+        font-size: 30px;
+    }
+
+    .subs input{ 
+        font-size: 15px;
+        height: 50px;
+        width: 200px;
+    }
+    .subs button{
+        font-size: 15px;
+        height: 45px;
+        width: 110px;
+
+    }
+
+    footer .container{
+            text-align: left;
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+
+    .socialMedia{
+        flex-direction: column;
+        align-self:flex-end;
+        width: auto;
+        margin: 0% 20px;
+    }
+    .socialMedia p{
+        display: inline-block;
+    }
+    .socialMedia i{
+    padding:0 5px;
+    }
+
+
+
+    }
+@media(min-width:1000px){
+    .title img{
+        bottom: -90px;
+        height: 90vh;
+        }
+    .categories img{
+        height: 24.5vw;
+    }
+    .categories div{
+        padding: 0;
+    }
+    .carousel-cell{
+        width:auto;
+    }
+    .subs{
+        width: 500px;  
+        font-size: 30px;
+    }
+
+    .subs input{ 
+        font-size: 17px;
+        width: 290px;
+    }
+    .subs button{
+        font-size: 18px;
+        width: 170px;
+
+    }
+
+}
