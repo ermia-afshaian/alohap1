@@ -205,7 +205,7 @@ nav  li:hover{
 }
 
 .categories img{
-    height: 47.5vw;
+    height: 49vw;
     filter: brightness(.8);
     transition: filter .6s ease; 
 }
