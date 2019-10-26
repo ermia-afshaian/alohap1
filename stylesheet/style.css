@@ -316,7 +316,7 @@ nav  li:hover{
     padding-left:10px;
     width: 132px;
     border: none;
-    height: 30px;
+    height: 20px;
 }
 .subs button{
     font-size: 10px;
@@ -363,7 +363,7 @@ footer div{
     display: block;
     padding: 2px 0;
 }
-span p{
+.socialMedia p{
     display: none;
 }
 .socialMedia i{
