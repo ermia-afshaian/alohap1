@@ -7,31 +7,32 @@
         <link rel="stylesheet" href="fonts/stylesheet.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="javascript/flickity.pkgd.min.js"></script>
 </head>
 <body>
 <header>
         <img src="images/aloha-logo.svg" class="logo" alt="aloha logo">
         
-        <div class="cartlogo"  ><img src="images/cart-icon.svg" alt="cart icon" class="cart" onclick="clickCounter()">
+        <div class="cartlogo"  ><img src="images/cart-icon.svg" alt="cart icon" class="cart" >
         <span id="result">0</span>
         </div>
         <nav><div></div>
-               <ul>
-                        <li>ABOUT</li>
-                        <li>SHOP</li>
-                        <li>FEATURE</li>
-                        <li>UPDATES</li>
+               <ul class="topnav">
+                        <li> <a href="#about">ABOUT</a></li>
+                        <li> <a href="#shop">SHOP</a></li>
+                        <li> <a href="#feature">FEATURE</a></li>
+                        <li> <a href="#updates">UPDATES</a></li>
                 </ul>
         </nav>
         </header>
         <div class="title"><img src="images/banner-girl.png" alt="banner girl" > <h1>new colection</h1><h2>Spring/Summer 2016</h2></div>
 <main>
-        <section class="intro">
+        <section class="intro" id="about">
                 <h2>Hand-Crafted <strong>Style</strong></h2> 
                 <p>Aloha Apparel Co. selld only the finest ready-to-travel clothing. browse our current selection of products or sign-up for updates below.</p> 
         </section>
         
-        <div class="categories">
+        <div class="categories" id="shop">
 
                 <div class="item big pad"><img src="images/mens-category.jpg" alt="mens category"> <span>men's</span></div>
                 <div class="item small pad"><img src="images/trends-category.jpg" alt="trends category"><span>trends</span></div>
@@ -40,7 +41,7 @@
                 <div class="item small pad"><img src="images/bags-category.jpg" alt="bags category"><span>bags</span></div>
                 <div class="item big"><img src="images/womens-category.jpg" alt="womens category"><span>women's</span></div>
         </div>
-       <section class="products">
+       <section class="products" id="feature">
                 <div class="mostloved">
                 <h2>
                 Most-Loved <span>PRODUCTS</span>       
@@ -48,23 +49,23 @@
                 </div>
        </section>
        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-        <div class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack"><span>bags</span> <h2>blue-hipster-backpack</h2> <p>$69.00</p></div>
-        <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt=">blue silk dress"><span>dresses</span> <h2>blue-silk-dress</h2><p>$69.00</p></div>
-        <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt=">cotton blue shirt"><span>shirts</span><h2>cotton-blue-shirt</h2><p>$69.00</p></div>        
-        <div class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress"><span>dresses</span><h2>checked-stretch-dress</h2><p>$69.00</p></div>
-        <div class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt"><span>T-shirts</span><h2>cotton-yellow-tshirt</h2><p>$69.00</p></div>        
-        <div class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="demin overall shorts"><span>shorts</span><h2>demin-overall-shorts</h2><p>$69.00</p></div>
-        <div class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress"><span>dresses</span><h2>pink-dotted-dress</h2><p>$69.00</p></div>        
-        <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="stretch knit dress"><span>dresses</span><h2>stretch-knit-dress</h2><p>$69.00</p></div>
+        <div class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack"><span>bags</span> <h2>blue-hipster-backpack</h2> <p>$69.00</p><div onclick="clickCounter()">add to cart</div> </div>
+        <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt=">blue silk dress"><span>dresses</span> <h2>blue-silk-dress</h2><p>$69.00</p><div onclick="clickCounter()">add to cart</div></div>
+        <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt=">cotton blue shirt"><span>shirts</span><h2>cotton-blue-shirt</h2><p>$69.00</p><div onclick="clickCounter()">add to cart</div></div>        
+        <div class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress"><span>dresses</span><h2>checked-stretch-dress</h2><p>$69.00</p><div onclick="clickCounter()">add to cart</div></div>
+        <div class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt"><span>T-shirts</span><h2>cotton-yellow-tshirt</h2><p>$69.00</p><div onclick="clickCounter()">add to cart</div></div>        
+        <div class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="demin overall shorts"><span>shorts</span><h2>demin-overall-shorts</h2><p>$69.00</p><div onclick="clickCounter()">add to cart</div></div>
+        <div class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress"><span>dresses</span><h2>pink-dotted-dress</h2><p>$69.00</p><div onclick="clickCounter()">add to cart</div></div>        
+        <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="stretch knit dress"><span>dresses</span><h2>stretch-knit-dress</h2><p>$69.00</p><div onclick="clickCounter()">add to cart</div></div>
       </div>
-       <section class="signing">
+       <section class="signing" id="updates">
                <h2>Sign-up for <strong>Updates</strong></h2>
                <p>say updatted on our last rleases. be first to find out about 
                 our up comming sales ,and get free style tips from our blog.unsubscribe at anytime.
                </p>
         <form class="subs">
-                <input type="text" placeholder="Your Email">
-                <button>Subscribe</button>
+                <input id="email" type="text" placeholder="Your Email">
+                <button id="btn" onclick="subscibe()" type="submit">Subscribe</button>
         </form>
        </section>
 </main>
@@ -87,18 +88,51 @@
         </div>
         </div>
  </footer>
- <script src="stylesheet/flickity.pkgd.min.js"></script>
+ 
+ <script src="javascript/main.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script>
-        function clickCounter() {
-          if (typeof(Storage) !== "undefined") {
-            if (sessionStorage.clickcount) {
-              sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-            } else {
-              sessionStorage.clickcount = 1;
-            }
-            document.getElementById("result").innerHTML = sessionStorage.clickcount;
-          }
-        }
+ $(document).ready(function(){
+        $("ul.topnav a")
+
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() { 
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+
+
+
+
+});
         </script>
 </body>
 </html> 

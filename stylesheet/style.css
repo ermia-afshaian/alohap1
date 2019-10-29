@@ -47,17 +47,22 @@ table {
 	border-spacing: 0;
 }
 
-/* my css ---------*/
+/* my css ------------------------------------------------------------------*/
 body{
     color: #2d2d2d;
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
     box-sizing: border-box;
 }
 .container{
     max-width: 1240px;
     margin: 0 auto;
 }
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
 header{
     max-width: 1240px;
     display: flex;
@@ -92,21 +97,27 @@ nav  li{
     font-weight: 600;
     font-size: 15px;
     font-family: raleMedium ;
-    transition: background .6s ease;
+    transition: background .6s ease; 
+    cursor: pointer;
 }
 
 
 nav  li:hover{
     background: rgba(255, 59, 59, 0.034);
-    cursor: pointer;
+   
     color: #b64036 ;
 }
 .logo{
     height: 40px; 
 
 }
-
+.cartlogo{
+    width: 70px;
+    top: 15px;
+    right: 15px;
+}
 .cart{
+
     box-sizing: border-box;
     display: inline-block;
     width: 40px;
@@ -118,10 +129,7 @@ nav  li:hover{
 .cart:hover{
     border: 1px rgba(255, 0, 0, 0.26) inset;
 }
-.cartlogo{
-    top: 15px;
-    right: 15px;
-}
+
 .cartlogo span{
     padding: 5px 8px;
     font-size: 10px;
@@ -263,6 +271,18 @@ nav  li:hover{
     font-size: 10px;
 
 }
+.carousel-cell div{
+    padding: 3px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: rale;
+    background: #1f1f1f;
+    color: rgb(226, 226, 226);
+
+}
+.carousel-cell div:hover{
+    background:  #2d2d2d;  
+}
 .carousel-cell{
     display: flex;
     flex-direction: column;
@@ -272,6 +292,7 @@ nav  li:hover{
 }
 .signing{
     color: white;
+    margin-bottom: 15px;
     text-align: center;
     padding: 60px 20px;
     background-image: url(../images/wave-bkgd.jpg);
@@ -405,15 +426,20 @@ footer div{
     .title h2{
         font-size: 50px;
     }
+    .categories{
+        transform: translateX(-5px);
+    }
     .categories div{
         padding:0;
+        
+
     }
     .categories .item{
         box-sizing: border-box;
         flex: 1 0 25%;
         max-width: 25%;
-        border: 5px solid white;
-        border-top:5px ;
+        border: solid white;
+        border-width:1px 5px 1px 5px;
     }
     .categories img{
         height: 25vw;
@@ -491,7 +517,26 @@ footer div{
 
 
     }
-@media(min-width:700px){
+@media(min-width:1000px){
+    .logo{
+        height: 50px;
+    }
+    .cart{
+        width: 50px;
+    }
+    .cartlogo span{
+        padding: 8px 10px;
+        font-size: 10px;
+        position: relative;
+        background: #e2574c;
+        color: white;
+        border-radius: 50%;
+        right: -18px;
+        top: -55px;
+    }
+    .topnav li{
+        font-size: 20px;
+    }
 
     .title img{
         bottom: -90px;
