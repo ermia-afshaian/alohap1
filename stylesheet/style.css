@@ -52,7 +52,6 @@ body{
     color: #2d2d2d;
     margin: 0;
     padding: 0;
-    overflow-x:hidden;
     box-sizing: border-box;
 }
 .container{
@@ -100,11 +99,9 @@ nav  li{
     transition: background .6s ease; 
     cursor: pointer;
 }
-
-
 nav  li:hover{
     background: rgba(255, 59, 59, 0.034);
-   
+    cursor: pointer;
     color: #b64036 ;
 }
 .logo{
@@ -112,9 +109,8 @@ nav  li:hover{
 
 }
 .cartlogo{
-    width: 70px;
-    top: 15px;
-    right: 15px;
+    width: 40px;
+    position: relative;
 }
 .cart{
 
@@ -133,12 +129,12 @@ nav  li:hover{
 .cartlogo span{
     padding: 5px 8px;
     font-size: 10px;
-    position: relative;
+    position: absolute;
     background: #e2574c;
     color: white;
     border-radius: 50%;
-    right: 18px;
-    top: -33px;
+    right: -5px;
+    top: -5px;
 }
 
 .title{
@@ -210,6 +206,7 @@ nav  li:hover{
     flex-wrap: wrap;
     justify-content: space-between;
 
+
 }
 
 .categories img{
@@ -220,9 +217,13 @@ nav  li:hover{
 .categories img:hover{
     filter: brightness(.5)
 }
-.categories div{
-    padding: .5vw 0;
+.categories .item{
+    box-sizing: border-box;
+    width: 50%;
     position: relative;
+    border:solid white;
+    border-width:4px 5px 4px 5px;
+    overflow: hidden;
 }
 .categories span{
     font-size: 6vw;
@@ -235,9 +236,11 @@ nav  li:hover{
     left: 50%;
     transform: translateX(-50%);
 }
-.big img{
-    width:99vw ;
+.categories .big{
+    width:105vw ;
+    overflow: hidden;
 }
+
 .mostloved{
     padding: 50px;
     text-align: center;
@@ -420,14 +423,28 @@ footer div{
     .cartlogo{
         order: 2;
     }
+    .cartlogo span{
+        top:5px;
+    }
     .title h1{
         font-weight: 600;
     }
     .title h2{
         font-size: 50px;
     }
+    .intro{
+        padding: 80px 4%;
+    }
+    .intro h2{
+        font-size: 45px;
+    }
+    .intro p{
+        font-size: 25px;
+    }
     .categories{
-        transform: translateX(-5px);
+        width: 102%;
+        transform: translateX(-11px);
+        overflow: hidden;
     }
     .categories div{
         padding:0;
@@ -439,7 +456,7 @@ footer div{
         flex: 1 0 25%;
         max-width: 25%;
         border: solid white;
-        border-width:1px 5px 1px 5px;
+        border-width:3px 5px 3px 5px;
     }
     .categories img{
         height: 25vw;
@@ -456,16 +473,19 @@ footer div{
     .categories .big img{
         width: 105%;
     }
-    .big{
-        width: auto;
+    .mostloved{
+        font-size: 50px;
     }
     .carousel-cell{
         width: 50%;
     }
+    .signing{
+        line-height: 40px;
+    }
     .signing h2{
         font-family: playItalic;
-        font-size:30px;
-        margin-top: 20px;
+        font-size:50px;
+        margin: 40px auto;
     }
     .signing strong{
         font-family: playBold;
@@ -527,12 +547,8 @@ footer div{
     .cartlogo span{
         padding: 8px 10px;
         font-size: 10px;
-        position: relative;
-        background: #e2574c;
-        color: white;
-        border-radius: 50%;
-        right: -18px;
-        top: -55px;
+        right: -15px;
+        top: 0px;
     }
     .topnav li{
         font-size: 20px;
