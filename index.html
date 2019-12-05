@@ -18,10 +18,10 @@
         </div>
         <nav><div></div>
                <ul class="topnav">
-                        <li> <a href="#about">ABOUT</a></li>
-                        <li> <a href="#shop">SHOP</a></li>
-                        <li> <a href="#feature">FEATURE</a></li>
-                        <li> <a href="#updates">UPDATES</a></li>
+                        <li> <a aria-label="About section" href="#about">ABOUT</a></li>
+                        <li> <a aria-label="Shop section" href="#shop">SHOP</a></li>
+                        <li> <a aria-label="Features section" href="#feature">FEATURE</a></li>
+                        <li> <a aria-label="Updates section" href="#updates">UPDATES</a></li>
                 </ul>
         </nav>
         </header>
@@ -64,6 +64,7 @@
                 our up comming sales ,and get free style tips from our blog.  unsubscribe at anytime.
                </p>
         <form class="subs">
+                <label class="label-email" for="email" style='visibility:hidden; position: absolute'> e-mail </label>
                 <input id="email" type="text" placeholder="Your Email">
                 <button id="btn" onclick="subscibe()" type="submit">Subscribe</button>
         </form>
@@ -134,5 +135,6 @@
 
 });
         </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js'></script>
 </body>
 </html> 
