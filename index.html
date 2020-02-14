@@ -68,7 +68,7 @@
         <form class="subs">
                 <label class="label-email" for="email" style='visibility:hidden; position: absolute'> e-mail </label>
                 <input id="email" type="text" placeholder="Your Email">
-                <button id="btn" onclick="subscibe()" type="submit">Subscribe</button>
+                <button id="btn" type="submit">Subscribe</button>
         </form>
        </section>
 </main>
@@ -96,34 +96,27 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script>
  $(document).ready(function(){
-        $("ul.topnav a")
-
-  .click(function(event) {
-    // On-page links
+        $("ul.topnav a").click(function(event) {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
     ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
+      const target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000, function() { 
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
+
+          const $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(":focus")) { 
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.attr('tabindex','-1'); 
+            $target.focus();
           };
         });
       }
