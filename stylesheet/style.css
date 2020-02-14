@@ -108,7 +108,7 @@ nav div{
     margin: 10px 0;
 }
 nav  li{
-    color: #e2574c;
+    color: #c94e45;
     padding: 5px 3vw;
     list-style: none;
     border-radius:5px;
@@ -149,7 +149,7 @@ nav  li:hover{
     padding: 5px 8px;
     font-size: 10px;
     position: absolute;
-    background: #e2574c;
+    background: #c94e45;
     color: white;
     border-radius: 50%;
     right: -5px;
@@ -276,7 +276,7 @@ nav  li:hover{
 
 }
 .carousel-cell h2{
-    color:#e2574c;
+    color:#c94e45;
     font-family: play;
     font-size: 20px;
 }
@@ -352,6 +352,11 @@ nav  li:hover{
     background-color: white;
 }
 
+.label-email{
+    visibility: hidden;
+    position: absolute;
+}
+
 .subs input{ 
     font-size: 10px;
     margin: 10px;
@@ -367,7 +372,7 @@ nav  li:hover{
     font-family: ralemedium;
     height: 25px;
     border: none;
-    background: #e2574c;
+    background: #c94e45;
     color: white;
     width: 80px;
     border-radius: 25px;
